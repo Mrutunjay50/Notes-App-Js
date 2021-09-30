@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cloning a particular website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <!-- Navbar section -->
+  <section>
+    <nav class="navbar1">
+      <div class="navbar_container1">
+        <a href="#home" id="navbar_logo1">MJ</a>
+
+        <ul class="navbar_menu1">
+          <li class="navbar_item1"><a href="#home" class="navbar_links1" id="home-page1">Home</a></li>
+          <li class="navbar_item1"><a href="#about" class="navbar_links1" id="about-page1">about</a></li>
+          <li class="navbar_item1"><a href="#Services" class="navbar_links1" id="Services-page1">services</a></li>
+          <li class="navbar_btn1"><a href="#sign-up" class="btn1" id="signup1">sign-up</a></li>
+        </ul>
+      </div>
+      <div class="navbar_toggle1" id="mobile-menu1">
+        <div class="bar1"></div>
+        <div class="bar1"></div>
+        <div class="bar1"></div>
+      </div>
+    </nav>
+  </section>
+  <!-- Navbar section end -->
+  <!-- notes app section  -->
+  <section class="notes_section">
+
+    <div class="container my-3">
+      <h1>Welcome to My NotesApp</h1>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add a Title</h5>
+          <div class="form-group">
+            <textarea class="form-control" id="addTit" rows="1"></textarea>
+          </div>
+
+          <h5 class="card-title">Add a note</h5>
+          <div class="form-group">
+            <textarea class="form-control" id="addTxt" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" id="addBtn">Add Note</button>
+        </div>
+      </div>
+      <hr>
+      <h1>Your Notes</h1>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <hr>
+      <div id="notes" class="row container-fluid"> </div>
+    </div>
+
+  </section>
+  <script src="JS/toggle_mobile_menubar.js"></script>
+  <script src="JS/notes.js"></script>
+</body>
+
+</html>
